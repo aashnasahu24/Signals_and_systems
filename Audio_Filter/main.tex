@@ -63,7 +63,7 @@
 \label{input_sound}
 \item The sound file used for this code is obtained from the below link
 \begin{lstlisting}
-$https://github.com/dhanushnayakh03/EE1205/blob/main/Audio_%20Filter/codes/Dhanush-Singing.wav
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/soundfile.wav
 \end{lstlisting}
 \item 
 \label{Python code}
@@ -75,7 +75,7 @@ A Python Code is written to achieve Audio Filtering
 
 The audio file is analyzed using spectrogram using the online platform \href{https://academo.org/demos/spectrum-analyzer}{\url{https://academo.org/demos/spectrum-analyzer}}.\\
 
-The darker areas are those where the frequencies have very low intensities, and the orange and yellow areas represent frequencies that have high intensities in the sound.
+The darker areas are those where the frequencies have very low intensities, and the other areas represent frequencies that have high intensities in the sound.
 
 
 \begin{figure}[H]
@@ -110,11 +110,11 @@ Sketch $y(n)$.\\
 Solve\\
 \solution  The C code calculates $y\brak{n}$ and generates values in a text file.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/2.2.c
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/2_2.c
 \end{lstlisting} 
 The following code plots \eqref{prob:2.1} and \eqref{prob:2.2}
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/2.2.py
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/2.2.py
 \end{lstlisting}
 
 \begin{figure}[H]
@@ -143,18 +143,44 @@ and find
 \begin{equation}
 	{\mathcal {Z}}\{x(n-k)\} 
 \end{equation}
-\solution From \eqref{eq:z_trans},
+\solution Let
 \begin{align}
-{\mathcal {Z}}\{x(n-k)\} &=\sum _{n=-\infty }^{\infty }x(n-1)z^{-n}
-\\
-&=\sum _{n=-\infty }^{\infty }x(n)z^{-n-1} = z^{-1}\sum _{n=-\infty }^{\infty }x(n)z^{-n}
+y(n) &= x(n-k) \label{eq:l1}
 \end{align}
-resulting in \eqref{eq:shift1}. Similarly, it can be shown that
-%
-\begin{equation}
-\label{eq:z_trans_shift}
-	{\mathcal {Z}}\{x(n-k)\} = z^{-k}X(z)
-\end{equation}
+Taking z-transform
+\begin{align}
+\mathcal{Z}\brak{y(n)} &= \mathcal{Z}\brak{x(n-k)} \label{eq:l2}
+\end{align}
+Simplifying LHS
+\begin{align}
+Y(z) &= \sum_{n=-\infty}^{\infty} y(n)z^{-n} 
+\end{align}
+From \eqref{eq:l1}
+\begin{align}
+Y(z) &= \sum_{n=-\infty}^{\infty} x(n-k) z^{-n} \label{eq:l3}
+\end{align}
+Let 
+\begin{align}
+n-k &= s  \\\implies
+n &= s+k \label{eq:l4}
+\end{align}
+From \eqref{eq:l3} and \eqref{eq:l4}
+\begin{align}
+Y(z) &= \sum_{s=-\infty}^{\infty} x(s) z^{-(s+k)} \\
+&= z^{-k}\sum_{s=-\infty}^{\infty} x(s) z^{-s} 
+\end{align}
+As variable in Z-transform is dummy, on replacing it, we get
+\begin{align}
+Y(z) &= z^{-k}\sum_{n=-\infty}^{\infty} x(n) z^{-n} \\
+&= z^{-k}X(z) \label{eq:l5}
+\end{align}
+From \eqref{eq:l2} and \eqref{eq:l5}
+\begin{align}
+\mathcal{Z}\brak{x(n-k)} &= z^{-k}X(z) \label{eq:l6}
+\end{align}
+Put $k = 1$ resulting in \eqref{eq:shift1} \\
+Hence proved \\
+
 
 \item Find
 %
@@ -163,7 +189,7 @@ H(z) = \frac{Y(z)}{X(z)}
 \end{equation}
 from  \eqref{prob:2.2} assuming that the $Z$-transform is a linear operation.
 \\
-\solution  Applying \eqref{eq:z_trans_shift} in \eqref{prob:2.2},
+\solution  Applying \eqref{eq:l6} in \eqref{prob:2.2},
 \begin{align}
 Y(z) + \frac{1}{2}z^{-1}Y(z) &= X(z)+z^{-2}X(z)
 \\
@@ -196,10 +222,12 @@ is
 \begin{equation}
 U(z) = \frac{1}{1-z^{-1}}, \quad \abs{z} > 1
 \end{equation}
-\solution It is easy to show that
-\begin{equation}
-\delta(n) \system{Z} 1
-\end{equation}
+\solution
+\begin{align}
+    Z\{ \delta[n] \} &= \sum_{n=-\infty}^{\infty} \delta[n] \cdot z^{-n} \\
+                     &= z^0 \\
+                     &= 1
+\end{align}
 and from \eqref{eq:unit_step},
 \begin{align}
 U(z) &= \sum _{n= 0}^{\infty}z^{-n}
@@ -229,7 +257,7 @@ known as the {\em Discret Time Fourier Transform} (DTFT) of $x(n)$.
 \\
 \solution The following code plots the magnitude of transfer function.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/3.5.py
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/3.5.py
 \end{lstlisting}
 Substituting $z = e^{j \omega}$ in \eqref{eq:freq_resp}, we get
 \begin{align}
@@ -275,7 +303,7 @@ using \eqref{eq:anun} and \eqref{eq:z_trans_shift}.
 \\
 \solution The following code plots $h\brak{n}$ 
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/4.2.py
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/4.2.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -283,7 +311,7 @@ https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/4.2.py
 \caption{$h(n)$ as the inverse of $H(z)$}
 \label{fig:hn}
 \end{figure}
-%
+It is bounded and convergent.
 \item The system with $h(n)$ is defined to be stable if
 \begin{equation}
 \sum_{n=-\infty}^{\infty}h(n) < \infty \label{eq:stabilty_condn}
@@ -318,7 +346,7 @@ The following code plots Fig. \ref{fig:hndef}. Note that this is the same as Fig
 \ref{fig:hn}. 
 
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/4.2.py
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/4.4.py
 \end{lstlisting}
 \begin{figure}[!ht]
 \centering
@@ -326,24 +354,24 @@ https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/4.2.py
 \caption{$h(n)$ from the definition is same as \figref{fig:hn}}
 \label{fig:hndef}
 \end{figure}
-%
+
 \item Compute 
-%
+
 \begin{equation}
 \label{eq:convolution}
 y(n) = x(n)*h(n) = \sum_{n=-\infty}^{\infty}x(k)h(n-k)
 \end{equation}
-%
+
 Comment. The operation in \eqref{eq:convolution} is known as
 {\em convolution}.
-%
+
 \\
 \solution The following code plots Fig. \ref{fig:ynconv}. Note that this is the same as 
 $y(n)$ in  Fig. 
 \ref{fig:xnyn}. 
 %
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/4.5.py
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/4.5.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -357,11 +385,14 @@ https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/4.5.py
 y(n) =  \sum_{n=-\infty}^{\infty}x(n-k)h(k)
 \end{equation}
 \solution
-In \eqref{eq:convolution}, we substitute $k = n - k$ to get
+In \eqref{eq:convolution}, replacing $k$ by $n-m$ 
 \begin{align}
-y\brak{n} &= \sum_{k=-\infty}^{\infty}x\brak{k}h\brak{n - k} \\
-		  &= \sum_{n - k=-\infty}^{\infty}x\brak{n - k}h\brak{k} \\
-		  &= \sum_{k=-\infty}^{\infty}x\brak{n - k}h\brak{k}
+y\brak{n} &= \sum_{n-m=-\infty}^{\infty}x(n-m)h(n-(n-m)) \\
+ &= \sum_{n-m=-\infty}^{\infty}x(n-m)h(m)
+\end{align}
+Since, the variable in summation is dummy, replacing $m$ by $k$,
+\begin{align}
+&= \sum_{k=-\infty}^{\infty}x(n-k)h(k)
 \end{align}
 \end{enumerate}
 
@@ -388,13 +419,13 @@ y\brak{n}={\frac {1}{N}}\sum _{k=0}^{N-1}Y\brak{k}\cdot e^{\j 2\pi kn/N},\quad n
 
 \solution The above three questions are solved using the code below.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/5_sol.py
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/5_sol.py
 \end{lstlisting}
 
 \item Repeat the previous exercise by computing $X(k), H(k)$ and $y(n)$ through FFT and IFFT.
 \solution The solution of this question can be found in the code below.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/5.4.py   
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/5.4.py   
 \end{lstlisting}
 This code verifies the result by plotting the obtained result with the result obtained by IDFT.
 \begin{figure}[H]
@@ -441,7 +472,7 @@ where the $\odot$ represents the Hadamard product which performs element-wise mu
 
 The below code computes $y\brak{n}$ by DFT Matrix and then plots it.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/5.5.py
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/5.5.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -473,7 +504,7 @@ where the input signal is $x(n)$ and the output signal is $y(n)$ with initial va
 
 \solution The below code gives the output of an Audio Filter without using the built in function signal.lfilter.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/6.1.py 
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/6.1.py 
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -499,11 +530,11 @@ From \ref{eq:iir_filter_gen}
 \end{align}
 Difference Equation is given by :
 \begin{align}
-	&y(n) - \brak{3.66}y(n - 1) + \brak{5.05}y(n - 2) \nonumber \\
-	&- \brak{3.099}y(n - 3) + \brak{0.715}y(n - 4) \nonumber \\
-	&= \brak{1.45\times 10^{-5}}x(n) + \brak{5.74 \times 10^{-5}}x(n - 1) \nonumber \\
-	&+ \brak{8.62 \times 10^{-5}}x(n - 2) + \brak{5.74 \times 10^{-5}}x(n - 3) \nonumber \\
-	&+ \brak{1.43 \times 10^{-5}}x(n - 4)
+	&y(n) - \brak{3.627}y(n - 1) + \brak{4.95}y(n - 2) \nonumber \\
+	&- \brak{3.012}y(n - 3) + \brak{0.689}y(n - 4) \nonumber \\
+	&= \brak{2.15\times 10^{-5}}x(n) + \brak{8.608 \times 10^{-5}}x(n - 1) \nonumber \\
+	&+ \brak{1.29 \times 10^{-4}}x(n - 2) + \brak{8.608 \times 10^{-5}}x(n - 3) \nonumber \\
+	&+ \brak{2.15 \times 10^{-5}}x(n - 4)
 \end{align}
 From \eqref{eq:iir_filter_gen} 
 \begin{align}
@@ -527,7 +558,7 @@ h(n) &= \sum_{i}r(i)[p(i)]^nu(n) + \sum_{j}k(j)\delta(n - j)
 \end{align}
 The below code computes the values of $r\brak{i},p\brak{i} , k\brak{i}$ and plots $h\brak{n}$
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/6.2.py
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/6.2.py
 \end{lstlisting}
 \input{tables/audio_filter_tab}
 
@@ -540,7 +571,7 @@ H(1)&= \sum_{n = 0}^{\infty}h(n)  = \frac{\sum_{k = 0}^{N}b(k)}{\sum_{k = 0}^{M}
 As both $a\brak{k}$ and $b\brak{k}$ are finite length sequences they converge.\\
 The below code plots Filter frequency response
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/6_filter_response.py
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/6_filter_response.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -553,7 +584,7 @@ The below code plots the Butterworth Filter in analog domain by using bilinear t
     z=\frac{1+sT/2}{1-sT/2}
 \end{align}
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/analog_filt.py
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/analog_filt.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -566,7 +597,7 @@ https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/analog
 
 The below code plots the Pole-Zero Plot of the frequency response.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/6.2_pole-zero.py
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/6.2_pole-zero.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -587,7 +618,7 @@ https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/6.2_po
 
 \solution The below C code computes FFT of a given sequence.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/fft.c
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/fft.c
 \end{lstlisting}
 The C function involved in computing the FFT is called in the below python code and the result is computed.\\
 
@@ -597,7 +628,7 @@ gcc -shared -o fft.so -fPIC fft.c
 \end{lstlisting}
 
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/fft_python.py
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/fft_python.py
 \end{lstlisting}
 
 \item Find the time complexities of computing y(n)
@@ -605,11 +636,11 @@ using FFT/IFFT and convolution and Compare.\\
 \solution  The time required to compute y(n) using these two methods is calculated and the data is stored in a text file using the below C code.
 
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/6.4_time.c
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/6.4_time.c
 \end{lstlisting}
 The below python code extracts the data from these text files and plots Time vs $n$ for comparison.
 \begin{lstlisting}
-https://github.com/dhanushnayakh03/EE1205/tree/main/Audio_%20Filter/codes/6.4_plot.py
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Audio_Filter/codes/6.4_plot.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering

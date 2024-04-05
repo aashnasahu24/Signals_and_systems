@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.5)  5 APR 2024 18:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.5)  5 APR 2024 23:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1364,158 +1364,182 @@ File: figs/Plot_xn_yn.png Graphic file (type png)
 Package pdftex.def Info: figs/Plot_xn_yn.png  used on input line 122.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 180--183
 
-LaTeX Warning: Command \j invalid in math mode on input line 225.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 225.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 227.
-
-
-LaTeX Warning: Command \j invalid in math mode on input line 227.
+ []
 
 [2 <./figs/Plot_xn_yn.png>]
-<figs/H(z)_3.5.png, id=140, 462.528pt x 346.896pt>
+
+LaTeX Warning: Command \j invalid in math mode on input line 253.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 253.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 255.
+
+
+LaTeX Warning: Command \j invalid in math mode on input line 255.
+
+<figs/H(z)_3.5.png, id=141, 462.528pt x 346.896pt>
 File: figs/H(z)_3.5.png Graphic file (type png)
 <use figs/H(z)_3.5.png>
-Package pdftex.def Info: figs/H(z)_3.5.png  used on input line 249.
+Package pdftex.def Info: figs/H(z)_3.5.png  used on input line 277.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-<figs/hn.png, id=145, 462.528pt x 346.896pt>
+[3 <./figs/H(z)_3.5.png>]
+
+LaTeX Warning: Reference `eq:z_trans_shift' on page 4 undefined on input line 3
+01.
+
+<figs/hn.png, id=174, 462.528pt x 346.896pt>
 File: figs/hn.png Graphic file (type png)
 <use figs/hn.png>
-Package pdftex.def Info: figs/hn.png  used on input line 282.
+Package pdftex.def Info: figs/hn.png  used on input line 310.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
- [3 <./figs/H(z)_3.5.png> <./figs/hn.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 310--316
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--344
 
  []
 
-<figs/hndef.png, id=179, 462.528pt x 346.896pt>
+<figs/hndef.png, id=180, 462.528pt x 346.896pt>
 File: figs/hndef.png Graphic file (type png)
 <use figs/hndef.png>
-Package pdftex.def Info: figs/hndef.png  used on input line 325.
+Package pdftex.def Info: figs/hndef.png  used on input line 353.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-<figs/y_by_conv.png, id=184, 462.528pt x 346.896pt>
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369 \solution
+                The following code plots Fig. \ref{fig:ynconv}. Note that th...
+
+? 
+<figs/y_by_conv.png, id=185, 462.528pt x 346.896pt>
 File: figs/y_by_conv.png Graphic file (type png)
 <use figs/y_by_conv.png>
-Package pdftex.def Info: figs/y_by_conv.png  used on input line 350.
+Package pdftex.def Info: figs/y_by_conv.png  used on input line 378.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+[4 <./figs/hn.png> <./figs/hndef.png>]
 
-LaTeX Warning: Command \j invalid in math mode on input line 375.
+LaTeX Warning: Command \j invalid in math mode on input line 406.
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 385.
+LaTeX Warning: Command \j invalid in math mode on input line 416.
 
-[4 <./figs/hndef.png> <./figs/y_by_conv.png>]
-<figs/yn_verf_5.4.png, id=214, 462.528pt x 346.896pt>
+<figs/yn_verf_5.4.png, id=215, 462.528pt x 346.896pt>
 File: figs/yn_verf_5.4.png Graphic file (type png)
 <use figs/yn_verf_5.4.png>
-Package pdftex.def Info: figs/yn_verf_5.4.png  used on input line 402.
+Package pdftex.def Info: figs/yn_verf_5.4.png  used on input line 433.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-<figs/yn_DFT_matrix.png, id=216, 462.528pt x 346.896pt>
+[5 <./figs/y_by_conv.png> <./figs/yn_verf_5.4.png>]
+<figs/yn_DFT_matrix.png, id=244, 462.528pt x 346.896pt>
 File: figs/yn_DFT_matrix.png Graphic file (type png)
 <use figs/yn_DFT_matrix.png>
-Package pdftex.def Info: figs/yn_DFT_matrix.png  used on input line 448.
+Package pdftex.def Info: figs/yn_DFT_matrix.png  used on input line 479.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 455.
+(hyperref)                removing `math shift' on input line 486.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 455.
+(hyperref)                removing `\@@underline' on input line 486.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 455.
+(hyperref)                removing `\hbox' on input line 486.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 455.
+(hyperref)                removing `\mathsurround' on input line 486.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 455.
+(hyperref)                removing `\z@' on input line 486.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 455.
+(hyperref)                removing `math shift' on input line 486.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--473
+Underfull \hbox (badness 10000) in paragraph at lines 500--504
 
  []
 
-[5 <./figs/yn_verf_5.4.png> <./figs/yn_DFT_matrix.png>]
-<figs/Audio_Filter_verf.png, id=244, 462.528pt x 346.896pt>
+<figs/Audio_Filter_verf.png, id=247, 462.528pt x 346.896pt>
 File: figs/Audio_Filter_verf.png Graphic file (type png)
 <use figs/Audio_Filter_verf.png>
-Package pdftex.def Info: figs/Audio_Filter_verf.png  used on input line 480.
+Package pdftex.def Info: figs/Audio_Filter_verf.png  used on input line 511.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
-Overfull \hbox (27.65247pt too wide) detected at line 499
+Overfull \hbox (27.65247pt too wide) detected at line 530
 []
  []
 
 
-Overfull \hbox (7.96732pt too wide) detected at line 507
+Overfull \hbox (13.96732pt too wide) detected at line 538
 []
  []
 
-
-Underfull \hbox (badness 2460) in paragraph at lines 527--529
+[6 <./figs/yn_DFT_matrix.png> <./figs/Audio_Filter_verf.png>]
+Underfull \hbox (badness 2460) in paragraph at lines 558--560
 \OT1/txr/m/n/12 The be-low code com-putes the val-ues of
  []
 
 (./tables/audio_filter_tab.tex
-Overfull \hbox (11.15627pt too wide) in paragraph at lines 5--14
+Overfull \hbox (11.1632pt too wide) in paragraph at lines 5--14
  [][] 
  []
 
 )
-<figs/Filter_Response.png, id=253, 462.528pt x 346.896pt>
+<figs/Filter_Response.png, id=281, 462.528pt x 346.896pt>
 File: figs/Filter_Response.png Graphic file (type png)
 <use figs/Filter_Response.png>
-Package pdftex.def Info: figs/Filter_Response.png  used on input line 547.
+Package pdftex.def Info: figs/Filter_Response.png  used on input line 578.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
- [6 <./figs/Audio_Filter_verf.png>]
-<figs/Butterworth_analog.png, id=279, 462.528pt x 346.896pt>
+<figs/Butterworth_analog.png, id=282, 462.528pt x 346.896pt>
 File: figs/Butterworth_analog.png Graphic file (type png)
 <use figs/Butterworth_analog.png>
-Package pdftex.def Info: figs/Butterworth_analog.png  used on input line 560.
+Package pdftex.def Info: figs/Butterworth_analog.png  used on input line 591.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-<figs/Pole_Zero_Plt.png, id=280, 722.7pt x 578.16pt>
+ [7 <./figs/Filter_Response.png> <./figs/Butterworth_analog.png>]
+<figs/Pole_Zero_Plt.png, id=308, 722.7pt x 578.16pt>
 File: figs/Pole_Zero_Plt.png Graphic file (type png)
 <use figs/Pole_Zero_Plt.png>
-Package pdftex.def Info: figs/Pole_Zero_Plt.png  used on input line 573.
+Package pdftex.def Info: figs/Pole_Zero_Plt.png  used on input line 604.
 (pdftex.def)             Requested size: 252.0pt x 201.60033pt.
-<figs/h(n)_6.2.png, id=281, 462.528pt x 346.896pt>
+<figs/h(n)_6.2.png, id=309, 462.528pt x 346.896pt>
 File: figs/h(n)_6.2.png Graphic file (type png)
 <use figs/h(n)_6.2.png>
-Package pdftex.def Info: figs/h(n)_6.2.png  used on input line 580.
+Package pdftex.def Info: figs/h(n)_6.2.png  used on input line 611.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 586--587
+Underfull \hbox (badness 10000) in paragraph at lines 617--618
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 592--593
+Underfull \hbox (badness 10000) in paragraph at lines 623--624
 
  []
 
-[7 <./figs/Filter_Response.png> <./figs/Butterworth_analog.png> <./figs/Pole_Ze
-ro_Plt.png> <./figs/h(n)_6.2.png>]
-<figs/Time Complexity Comparision.png, id=305, 462.528pt x 346.896pt>
+<figs/Time Complexity Comparision.png, id=310, 462.528pt x 346.896pt>
 File: figs/Time Complexity Comparision.png Graphic file (type png)
 <use figs/Time Complexity Comparision.png>
 Package pdftex.def Info: figs/Time Complexity Comparision.png  used on input li
-ne 616.
+ne 647.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
- [8 <./figs/Time Complexity Comparision.png>] (./main.aux)
+[8 <./figs/Pole_Zero_Plt.png> <./figs/h(n)_6.2.png> <./figs/Time Complexity Com
+parision.png>] [9
+
+] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1523,26 +1547,29 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C50489AC4B237CCA6623115DF81D02F2;673.
  ) 
 Here is how much of TeX's memory you used:
- 43834 strings out of 478287
- 1008816 string characters out of 5849290
- 1723329 words of memory out of 5000000
- 61103 multiletter control sequences out of 15000+600000
+ 43853 strings out of 478287
+ 1009024 string characters out of 5849290
+ 1726520 words of memory out of 5000000
+ 61109 multiletter control sequences out of 15000+600000
  551005 words of font info for 207 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 115i,17n,118p,424b,1901s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
-fonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 775846 bytes).
+ 115i,17n,118p,424b,1958s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{lstnumber.-2.33} has been referenced but does not
+ exist, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/txfonts/rtcxr.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfo
+nts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/urw/times/utmri8a.pfb>
+Output written on main.pdf (9 pages, 778918 bytes).
 PDF statistics:
- 407 PDF objects out of 1000 (max. 8388607)
- 345 compressed objects within 4 object streams
- 196 named destinations out of 1000 (max. 500000)
+ 428 PDF objects out of 1000 (max. 8388607)
+ 365 compressed objects within 4 object streams
+ 209 named destinations out of 1000 (max. 500000)
  136 words of extra memory for PDF output out of 10000 (max. 10000000)
 
