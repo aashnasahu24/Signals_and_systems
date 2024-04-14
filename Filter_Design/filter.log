@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.13)  14 APR 2024 21:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.13)  14 APR 2024 22:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1272,14 +1272,13 @@ File: figs/FIR_Low_Filter.png Graphic file (type png)
 <use figs/FIR_Low_Filter.png>
 Package pdftex.def Info: figs/FIR_Low_Filter.png  used on input line 379.
 (pdftex.def)             Requested size: 345.0pt x 258.76335pt.
- [12]
-<figs/FIR_Bandpass_Filter.png, id=236, 462.528pt x 346.896pt>
+ [12] [13 <./figs/FIR_Low_Filter.png>]
+<figs/FIR_Bandpass_Filter.png, id=247, 462.528pt x 346.896pt>
 File: figs/FIR_Bandpass_Filter.png Graphic file (type png)
 <use figs/FIR_Bandpass_Filter.png>
 Package pdftex.def Info: figs/FIR_Bandpass_Filter.png  used on input line 412.
 (pdftex.def)             Requested size: 345.0pt x 258.76335pt.
- [13 <./figs/FIR_Low_Filter.png>] [14 <./figs/FIR_Bandpass_Filter.png>] (./filt
-er.aux)
+ [14 <./figs/FIR_Bandpass_Filter.png>] (./filter.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1289,7 +1288,7 @@ Package rerunfilecheck Info: File `filter.out' has not changed.
 Here is how much of TeX's memory you used:
  42378 strings out of 478287
  980780 string characters out of 5849289
- 1496242 words of memory out of 5000000
+ 1494242 words of memory out of 5000000
  59759 multiletter control sequences out of 15000+600000
  508125 words of font info for 120 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1302,7 +1301,7 @@ onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on filter.pdf (14 pages, 320266 bytes).
+Output written on filter.pdf (14 pages, 320197 bytes).
 PDF statistics:
  322 PDF objects out of 1000 (max. 8388607)
  270 compressed objects within 3 object streams

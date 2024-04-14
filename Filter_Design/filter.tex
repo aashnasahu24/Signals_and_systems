@@ -142,7 +142,7 @@ we get $N\geq 4$ and $0.337 \leq \epsilon \leq 0.61$\\
 \newpage
 The below code plots \eqref{eq:mag_freq_response} for different values of $\epsilon$ .
 \begin{lstlisting}
-https://github.com/Srija04092006/EE1205/blob/main/Filter%20Design/codes/a.py
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Filter_Design/codes/a.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -176,14 +176,14 @@ where $k$ is the index of the pole and \\
 
 The below code computes the values of $s_k$ and stores it in a text file. 
 \begin{lstlisting}
-https://github.com/Srija04092006/EE1205/blob/main/Filter%20Design/codes/sk_gen.c
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Filter_Design/codes/sk_gen.c
 \end{lstlisting}
 The poles obtained are formulated in the table below.
 \input{tables/sk_tab}
 
 The below code plots the pole-zero plot.
 \begin{lstlisting}
-https://github.com/Srija04092006/EE1205/blob/main/Filter%20Design/codes/pole_zero_plt.py
+https://github.com/aashnasahu24/Signals_and_systems/blob/main/Filter_Design/codes/pole_zero_plt.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -204,12 +204,12 @@ We know that from \eqref{eq:mag_freq_response}:-
 \end{align}
 The value of $G_{LP}$ can be found using the following code after appropriate substitution
 \begin{lstlisting}
-    https://github.com/Srija04092006/EE1205/blob/main/Filter%20Design/codes/gain_LP.py
+    https://github.com/aashnasahu24/Signals_and_systems/blob/main/Filter_Design/codes/gain_LP.py
 \end{lstlisting}
 Substituting respective values in \eqref{eq:Gain_eq_LP} we get $G_{LP}=0.3125$
 Simplifications for equation \eqref{eq:design} and \eqref{eq:magnitude_bandpass_sdom} are done using the following code
 \begin{lstlisting}
-     https://github.com/Srija04092006/EE1205/blob/main/Filter%20Design/codes/exp_calc.py
+     https://github.com/aashnasahu24/Signals_and_systems/blob/main/Filter_Design/codes/exp_calc.py
 \end{lstlisting}
 \begin{align}
      H_{a,LP}(s_L) &= \frac{0.3125}{\brak{s_L-s_5}\brak{s_L-s_6}\brak{s_L-s_7}\brak{s_L-s_8}}\\
@@ -217,7 +217,7 @@ Simplifications for equation \eqref{eq:design} and \eqref{eq:magnitude_bandpass_
 \end{align}
 The figure to compare design and specification is produced using the following code
 \begin{lstlisting}
-   https://github.com/Srija04092006/EE1205/blob/main/Filter%20Design/codes/b.py
+   https://github.com/aashnasahu24/Signals_and_systems/blob/main/Filter_Design/codes/b.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -249,7 +249,7 @@ Thus the response in s domain
 \end{align}
 The expressions in the s-domain and gain factors are computed by writing the following Python code. \\
 \begin{lstlisting}
-   https://github.com/Srija04092006/EE1205/blob/main/Filter%20Design/codes/g.py
+   https://github.com/aashnasahu24/Signals_and_systems/blob/main/Filter_Design/codes/g.py
 \end{lstlisting}
 
 In Figure 3, we plot $\vert H_{a,BP}(j\Omega)\vert$ as a function of $\Omega$ for both positve as
@@ -257,7 +257,7 @@ well as negative frequencies.  We find that the passband and stopband frequencie
 match well with those obtained analytically through the bilinear transformation.\\
 The below code plots the Band Pass Filter plot\\
 \begin{lstlisting}
-   https://github.com/Srija04092006/EE1205/blob/main/Filter%20Design/codes/c.py
+  https://github.com/aashnasahu24/Signals_and_systems/blob/main/Filter_Design/codes/c.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -279,11 +279,11 @@ Substituting $s=\frac{1-z^{-1}}{1+z^{-1}}$ in \eqref{eq:magnitude_bandpass_sdom}
 
 where $G=1.908\times 10^{-5}$  
 \begin{lstlisting}
-     https://github.com/Srija04092006/EE1205/blob/main/Filter%20Design/codes/filter_in_z.py
+     https://github.com/aashnasahu24/Signals_and_systems/blob/main/Filter_Design/codes/filter_in_z.py
 \end{lstlisting}  
 The below code plots the Digital Band Pass Filter plot\\
 \begin{lstlisting}
-   https://github.com/Srija04092006/EE1205/blob/main/Filter%20Design/codes/f.py
+   https://github.com/aashnasahu24/Signals_and_systems/blob/main/Filter_Design/codes/f.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -305,7 +305,7 @@ The stopband tolerance is $\delta=0.15$.The cutoff-frequency is given by :
 \end{align}
 The following python code is used to plot the frequency and the impulse response of an ideal Low Pass Filter.
 \begin{lstlisting}
-      https://github.com/Srija04092006/EE1205/blob/main/Filter%20Design/codes/FIR_1.py
+      https://github.com/aashnasahu24/Signals_and_systems/blob/main/Filter_Design/codes/FIR_1.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -372,7 +372,7 @@ Therefore the desired impulse response is :
 \end{enumerate}
 The code to plot the magnitude response of the FIR Low Pass Filter is as follows
 \begin{lstlisting}
-     https://github.com/Srija04092006/EE1205/blob/main/Filter%20Design/codes/d.py
+     https://github.com/aashnasahu24/Signals_and_systems/blob/main/Filter_Design/codes/d.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
@@ -405,7 +405,7 @@ Multipying by window function we get :
 \end{align}
 The code to plot the same is as follows
 \begin{lstlisting}
-    https://github.com/HarryNyquist/EE1205/blob/main/Filter_Design/codes/e.py
+    https://github.com/aashnasahu24/Signals_and_systems/blob/main/Filter_Design/codes/e.py
 \end{lstlisting}
 \begin{figure}[H]
 \centering
